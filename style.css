@@ -485,6 +485,18 @@ main.about-main {
     text-align: center;
     padding-top: 20px;
 }
+.join-main {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 80vh;
+       padding: 60px 5%;
+   }
+
+   .join-text-content {
+       flex: 1;
+       max-width: 600px;
+   }
 
 .vision-boxes {
     display: flex;
