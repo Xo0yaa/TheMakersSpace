@@ -1413,3 +1413,39 @@
         font-size: 60px; /* Smaller stars on mobile */
     }
 }
+
+/* Add proper spacing to the review button in the header */
+.review-btn {
+    font-family: var(--font-body);
+    text-decoration: none;
+    background-color: var(--color-button-yellow);
+    color: var(--color-primary-brown);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 30px; /* Add space between nav and button */
+}
+
+/* For tablet viewport specifically */
+@media (max-width: 1024px) and (min-width: 769px) {
+    header {
+        padding: 15px 5%; /* Reduce side padding on tablets */
+    }
+    
+    nav ul {
+        gap: 20px; /* Reduce gap between nav items */
+    }
+    
+    nav ul li a {
+        font-size: 13px; /* Slightly smaller nav text */
+    }
+    
+    .review-btn {
+        margin-left: 20px; /* Adjust button spacing */
+        padding: 8px 16px; /* Slightly smaller button */
+        font-size: 13px;
+    }
+}
